@@ -1,0 +1,16 @@
+A signal is a interrupt is communication between running programs .
+
+A process decides what to do with a signal by declaring or installing a signal
+handler. A signal handler is a function that is executed when a signal is received.
+Different signal handlers can be executed for different signal IDs.  Each
+process is given a default signal handler for each signal, usually containing code
+that terminates the process.
+
+Signals can come from the user, other processors, or the kernel.
+
+Multiple signals are handled by different signal handlers in the program. An integer value is assigned 
+to different signal types. 
+A signal handler is executed asynchronously, meaning that it interrupts the process at its current
+execution point and execution is jumped to the signal handler function.
+
+You can use the UNIX system call kill (from a C program) to send signal from one process to another.

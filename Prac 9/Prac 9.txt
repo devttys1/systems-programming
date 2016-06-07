@@ -1,0 +1,24 @@
+Prac 9      
+
+3. chmod +x set
+	$./set
+
+	$sh set
+
+4. 	Yes, two types of variabes; Local and environment variables
+5. 	Two ways, use a shell interpreter or set executable bit
+
+	use shell interpreter: $sh scriptfile
+	use bash interpreter: $bash scriptfile
+
+	OR 
+
+	cd /path/to/file
+	chmod +x scriptfile 
+
+	./scriptfile
+	. ./scriptfile
+
+	/path/to/file/scriptfile
+
+	source scriptfile

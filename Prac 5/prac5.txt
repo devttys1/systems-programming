@@ -1,0 +1,35 @@
+3. Permissions, create date, modified date
+
+4. dale$ stat
+717702280 1127 crw--w---- 1 dale tty 268435456 0 "Apr 19 12:11:36 2016" "Apr 19 12:11:36 2016" "Apr 19 12:11:36 2016" "Jan  1 10:00:00 1970" 131072 0 0 (stdin)
+
+5. masking works by: setting bits, AND with 1 operation
+clearing bits, XOR with 1
+
+6. Unix-like operating systems create a virtual file system, which makes all the files on all the devices appear to exist in a single hierarchy. This means, in those systems, there is one root directory, and every file existing on the system is located under it somewhere. Inodes store information about files and directories (folders), such as file ownership, access mode (read, write, execute permissions), and file type. 
+
+7.
+r - x r w x - - x
+r w x r - - - - -
+r w x - - - - - -
+r w - r - - r - -
+r w - r w - r - -
+
+---------------------
+|1|0|1||1|1|1||0|0|1| = 571
+---------------------
+---------------------
+|1|1|1||1|0|0||0|0|0| = 740
+---------------------
+---------------------
+|1|1|1||0|0|0||0|0|0| = 700
+---------------------
+---------------------
+|1|1|0||1|0|0||1|0|0| = 644
+---------------------
+---------------------
+|1|1|0||1|1|0||1|0|0| = 664
+---------------------
+
+
+8. mkdir -p a/{b/{d/,e/,f/},c/{g/,h/}}

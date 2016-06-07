@@ -1,0 +1,5 @@
+ 
+	print "Enter temp Fahrenheit"
+	input Fahrenheit
+	Centrigrade equals 5 multiplied by (Fahrenheit minus 32) divided by 9
+	print "Fahrenheit to centrigrade is Centigrade"
